@@ -54,7 +54,7 @@ contract UniswapV3Oracle is IOracleUsd {
     emit DefaultTWAPPeriodSet(twapPeriod);
   }
 
-  function setDefaultTWAPPeriod(address quoteAsset) external g {
+  function setDefaultQuoteAsset(address quoteAsset) external g {
     defaultQuoteAsset = quoteAsset;
     emit DefaultQuoteAssetSet(quoteAsset);
   }
