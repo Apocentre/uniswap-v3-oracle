@@ -33,7 +33,7 @@ contract UniswapV3Oracle is IOracleUsd {
   uint32 public defaultTWAPPeriod = 45 minutes;
 
   // Unit Protocol oracle registry
-  IOracleRegistry public oracleRegistry = IOracleRegistry(0x75fBFe26B21fd3EA008af0C764949f8214150C8f);
+  IOracleRegistry public constant oracleRegistry = IOracleRegistry(0x75fBFe26B21fd3EA008af0C764949f8214150C8f);
 
   event QuoteParamsSet(address indexed baseAsset, QuoteParams quoteParams);
   event DefaultTWAPPeriodSet(uint32 twapPeriod);
