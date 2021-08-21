@@ -30,7 +30,7 @@ contract UniswapV3Oracle is IOracleUsd {
   // 0.3%
   uint24 public constant defaultPoolFee = 3000;
 
-  uint32 public defaultTWAPPeriod = 45 minutes;
+  uint32 public defaultTWAPPeriod = 30 minutes;
 
   // Unit Protocol oracle registry
   IOracleRegistry public constant oracleRegistry = IOracleRegistry(0x75fBFe26B21fd3EA008af0C764949f8214150C8f);
