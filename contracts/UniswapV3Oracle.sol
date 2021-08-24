@@ -96,7 +96,6 @@ contract UniswapV3Oracle is IOracleUsd {
   function getOracle(address asset) public view returns(IOracleUsd) {
     address oracle =  oracleRegistry.oracleByAsset(asset);
     require(oracle != address(0), "UniswapV3Oracle: quote asset oracle not found");
-    require(oracle != address(this), "UniswapV3Oracle: recursion");
     return IOracleUsd(oracle);
   }
 }
