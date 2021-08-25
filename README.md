@@ -2,7 +2,7 @@
 
 TWAP based oracle to quote assets in USD using Uniswap V3 pools and Unit Protocol oracle system.
 
-Mainnet address: [0x807983026C476D4E0d695E80413309Aa186E0bA7](https://etherscan.io/address/0x807983026c476d4e0d695e80413309aa186e0ba7#code)
+Mainnet address: [0xd31817a1E1578C4BECE02FbFb235d76f5716f18f](https://etherscan.io/address/0xd31817a1E1578C4BECE02FbFb235d76f5716f18f#code)
 
 ### Test
 
