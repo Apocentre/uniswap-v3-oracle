@@ -72,9 +72,7 @@ contract UniswapV3Oracle is IOracleUsd {
       quote.quoteAsset = defaultQuoteAsset;
     }
 
-    if (quote.quoteAsset == baseAsset) {
-      return getOracle(baseAsset).assetToUsd(baseAsset, amount);
-    }
+    require(quote.quoteAsset != baseAsset, "UniswapV3Oracle: quote == base");
 
     if (quote.poolFee == 0) {
       quote.poolFee = defaultPoolFee;
